@@ -30,7 +30,7 @@ public class PriorityQueueTest {
     }
     @Test
     public void test(){
-        PriorityQueue<Integer> Q = new PriorityQueue<>();
+        PriorityQueue Q = new PriorityQueue();
         for (int i:INPUT) {
             Q.add(i);
 //            System.out.println(i);
@@ -43,7 +43,7 @@ public class PriorityQueueTest {
     }
     @Test
     public void Exception_1(){
-        PriorityQueue<Integer> Q = new PriorityQueue<>();
+        PriorityQueue Q = new PriorityQueue();
         Exception exception = assertThrows(NullPointerException.class, ()->{
             Q.offer(null);
         });
@@ -51,14 +51,14 @@ public class PriorityQueueTest {
     @Test
     public void Exception_2(){
         Exception exception = assertThrows(NullPointerException.class, ()->{
-            PriorityQueue<Integer> Q = new PriorityQueue<>();
+            PriorityQueue Q = new PriorityQueue();
             Q.addAll(null);
         });
     }
     @Test
     public void Exception_3(){
         Exception exception = assertThrows(IllegalArgumentException.class, ()->{
-            PriorityQueue<Integer> Q = new PriorityQueue<>();
+            PriorityQueue Q = new PriorityQueue();
             Q.addAll(Q);
         });
     }
