@@ -54,7 +54,7 @@
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>
 					</descriptorRefs>
-					<finalName>0616081-test-</finalName>
+					<finalName>0616081</finalName>
 					<appendAssemblyId>false</appendAssemblyId>
 				</configuration>
 				<executions>
